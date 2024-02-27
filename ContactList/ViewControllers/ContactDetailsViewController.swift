@@ -7,12 +7,13 @@
 
 import UIKit
 
-class ContactDetailViewController: UIViewController {
+class ContactDetailsViewController: UIViewController {
 
+    var contact: Contacts!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
     
 
