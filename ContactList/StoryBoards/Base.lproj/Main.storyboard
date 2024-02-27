@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Contacts-->
         <scene sceneID="C38-gU-0U2">
             <objects>
                 <tableViewController id="IBR-Fn-61s" customClass="ContactsListViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
@@ -34,13 +34,13 @@
                             <outlet property="delegate" destination="IBR-Fn-61s" id="SUn-Mc-ifp"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="nD8-fB-T5E"/>
+                    <navigationItem key="navigationItem" title="Contacts" largeTitleDisplayMode="always" id="nD8-fB-T5E"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rw8-ya-Ubt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="509" y="-159"/>
         </scene>
-        <!--Contact Details View Controller-->
+        <!--Contact Details-->
         <scene sceneID="ajK-SW-iLq">
             <objects>
                 <viewController id="P7E-Cr-epQ" customClass="ContactDetailsViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
@@ -48,8 +48,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewL-fu-o9s">
-                                <rect key="frame" x="20" y="138" width="353" height="20.333333333333343"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewL-fu-o9s">
+                                <rect key="frame" x="20" y="190" width="353" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mXB-vQ-3Sc">
+                                <rect key="frame" x="20" y="231" width="353" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -60,10 +66,13 @@
                         <constraints>
                             <constraint firstItem="qoq-Sf-pC6" firstAttribute="trailing" secondItem="ewL-fu-o9s" secondAttribute="trailing" constant="20" id="2Pf-0F-JbE"/>
                             <constraint firstItem="ewL-fu-o9s" firstAttribute="top" secondItem="qoq-Sf-pC6" secondAttribute="top" constant="35" id="7Qd-e1-wKr"/>
+                            <constraint firstItem="mXB-vQ-3Sc" firstAttribute="leading" secondItem="qoq-Sf-pC6" secondAttribute="leading" constant="20" id="LTV-Jy-tLf"/>
+                            <constraint firstItem="mXB-vQ-3Sc" firstAttribute="top" secondItem="ewL-fu-o9s" secondAttribute="bottom" constant="20" id="OxT-Xa-U52"/>
                             <constraint firstItem="ewL-fu-o9s" firstAttribute="leading" secondItem="qoq-Sf-pC6" secondAttribute="leading" constant="20" id="d0X-ch-SbN"/>
+                            <constraint firstItem="qoq-Sf-pC6" firstAttribute="trailing" secondItem="mXB-vQ-3Sc" secondAttribute="trailing" constant="20" id="nGk-uV-qJ1"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="YkW-i9-e2f" customClass="ContactDetail"/>
+                    <navigationItem key="navigationItem" title="Contact Details" id="YkW-i9-e2f" customClass="ContactDetail"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AD7-Xa-MKc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -73,8 +82,8 @@
         <scene sceneID="v5r-hr-bfk">
             <objects>
                 <navigationController id="xS1-oZ-r9Y" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xuI-fF-Kvo" customClass="ContactViewController">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="xuI-fF-Kvo" customClass="ContactViewController">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
