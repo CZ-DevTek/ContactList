@@ -12,6 +12,10 @@ struct Contacts {
     let surname: String
     let phoneNumber: String
     let email: String
+    
+    var fullName: String {
+        "\(name) \(surname)"
+    }
 }
 
 let names = ["John", "Aaron", "Tim", "Ted", "Steven", "Jake", "Laura", "Victoria", "Jenny", "Ann"]
@@ -23,15 +27,19 @@ let emails = ["underground@gmail.com", "rockstar@mail.ru", "plainboing@yandex.ru
 func getContacts() -> [Contacts] {
     var contacts: [Contacts] = []
     
-    for _ in 1...10 {
-        let randomName = names[Int.random(in: 0..<names.count)]
-        let randomSurname = surnames[Int.random(in: 0..<surnames.count)]
+    let shuffledNames = names.shuffled()
+    let shuffledSurnames = surnames.shuffled()
+    
+    let count = min(10, min(shuffledNames.count, shuffledSurnames.count))
+    
+    for index in 0..<count {
         let randomPhone = phoneNumbers[Int.random(in: 0..<phoneNumbers.count)]
         let randomEmail = emails[Int.random(in: 0..<emails.count)]
         
-        let contact = Contacts(name: randomName, surname: randomSurname, phoneNumber: randomPhone, email: randomEmail)
+        let contact = Contacts(name: shuffledNames[index], surname: shuffledSurnames[index], phoneNumber: randomPhone, email: randomEmail)
         contacts.append(contact)
     }
+    
     return contacts
 }
 

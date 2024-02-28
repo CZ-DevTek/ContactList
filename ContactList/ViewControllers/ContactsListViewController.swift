@@ -13,11 +13,10 @@ final class ContactsListViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
     
-    //MARK: - Navigation
+//MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let indexPath = tableView.indexPathForSelectedRow else {return}
         let detailsVC = segue.destination as? ContactDetailsViewController
@@ -43,8 +42,7 @@ extension ContactsListViewController {
         let contact = contacts[indexPath.row]
         
         var content = cell.defaultContentConfiguration()
-        content.text = contact.name
-        content.secondaryText = contact.surname
+        content.text = contact.fullName
         
         cell.contentConfiguration = content
         
