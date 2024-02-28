@@ -19,15 +19,5 @@ class ContactDetailsViewController: UIViewController {
         title = contact.fullName
         phoneNumber.text = contact.phoneNumber
         email.text = contact.email
-        
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    }
-    */
-
 }
