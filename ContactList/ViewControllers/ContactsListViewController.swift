@@ -11,12 +11,8 @@ final class ContactsListViewController: UITableViewController {
     
     private let contacts = getContacts()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
-    
 //MARK: - Navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let indexPath = tableView.indexPathForSelectedRow else {return}
         let detailsVC = segue.destination as? ContactDetailsViewController
@@ -29,12 +25,6 @@ extension ContactsListViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         contacts.count
     }
-    
-    /*
-     override func numberOfSections(in: UITableView) -> Int {
-     5
-     }
-     */
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
