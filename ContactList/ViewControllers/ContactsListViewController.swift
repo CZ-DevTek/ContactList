@@ -9,7 +9,7 @@ import UIKit
 
 final class ContactsListViewController: UITableViewController {
     
-    private let contacts = getContacts()
+    var contacts: [Contacts]!
     
 //MARK: - Navigation
     
