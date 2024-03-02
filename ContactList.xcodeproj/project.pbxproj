@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4F289E572B8E69F700A5EDC6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F289E562B8E69F700A5EDC6 /* Model.swift */; };
 		4F289E5C2B9373C200A5EDC6 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F289E5B2B9373C200A5EDC6 /* DataStore.swift */; };
+		4F289E5E2B93898D00A5EDC6 /* SectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F289E5D2B93898D00A5EDC6 /* SectionTableViewController.swift */; };
 		4FFDBF402B8E66DB008BC147 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFDBF3F2B8E66DB008BC147 /* AppDelegate.swift */; };
 		4FFDBF422B8E66DB008BC147 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFDBF412B8E66DB008BC147 /* SceneDelegate.swift */; };
 		4FFDBF442B8E66DB008BC147 /* ContactsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFDBF432B8E66DB008BC147 /* ContactsListViewController.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		4F289E562B8E69F700A5EDC6 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		4F289E5B2B9373C200A5EDC6 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		4F289E5D2B93898D00A5EDC6 /* SectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTableViewController.swift; sourceTree = "<group>"; };
 		4FFDBF3C2B8E66DB008BC147 /* ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FFDBF3F2B8E66DB008BC147 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FFDBF412B8E66DB008BC147 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			children = (
 				4FFDBF432B8E66DB008BC147 /* ContactsListViewController.swift */,
 				4FFDBF542B8E6960008BC147 /* ContactDetailsViewController.swift */,
+				4F289E5D2B93898D00A5EDC6 /* SectionTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				4F289E5C2B9373C200A5EDC6 /* DataStore.swift in Sources */,
 				4FFDBF442B8E66DB008BC147 /* ContactsListViewController.swift in Sources */,
 				4FFDBF402B8E66DB008BC147 /* AppDelegate.swift in Sources */,
+				4F289E5E2B93898D00A5EDC6 /* SectionTableViewController.swift in Sources */,
 				4FFDBF552B8E6960008BC147 /* ContactDetailsViewController.swift in Sources */,
 				4FFDBF422B8E66DB008BC147 /* SceneDelegate.swift in Sources */,
 			);
