@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4F289E572B8E69F700A5EDC6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F289E562B8E69F700A5EDC6 /* Model.swift */; };
+		4F289E5C2B9373C200A5EDC6 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F289E5B2B9373C200A5EDC6 /* DataStore.swift */; };
 		4FFDBF402B8E66DB008BC147 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFDBF3F2B8E66DB008BC147 /* AppDelegate.swift */; };
 		4FFDBF422B8E66DB008BC147 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFDBF412B8E66DB008BC147 /* SceneDelegate.swift */; };
 		4FFDBF442B8E66DB008BC147 /* ContactsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFDBF432B8E66DB008BC147 /* ContactsListViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		4F289E562B8E69F700A5EDC6 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		4F289E5B2B9373C200A5EDC6 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		4FFDBF3C2B8E66DB008BC147 /* ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FFDBF3F2B8E66DB008BC147 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FFDBF412B8E66DB008BC147 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,14 @@
 			path = StoryBoards;
 			sourceTree = "<group>";
 		};
+		4F289E5A2B93739B00A5EDC6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4F289E5B2B9373C200A5EDC6 /* DataStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		4FFDBF332B8E66DB008BC147 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +87,7 @@
 		4FFDBF3E2B8E66DB008BC147 /* ContactList */ = {
 			isa = PBXGroup;
 			children = (
+				4F289E5A2B93739B00A5EDC6 /* Services */,
 				4FFDBF532B8E6907008BC147 /* Config */,
 				4FFDBF562B8E6968008BC147 /* ViewControllers */,
 				4F289E582B8E6A1600A5EDC6 /* Models */,
@@ -177,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F289E572B8E69F700A5EDC6 /* Model.swift in Sources */,
+				4F289E5C2B9373C200A5EDC6 /* DataStore.swift in Sources */,
 				4FFDBF442B8E66DB008BC147 /* ContactsListViewController.swift in Sources */,
 				4FFDBF402B8E66DB008BC147 /* AppDelegate.swift in Sources */,
 				4FFDBF552B8E6960008BC147 /* ContactDetailsViewController.swift in Sources */,
